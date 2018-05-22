@@ -43,7 +43,7 @@ Add following scripts to start_run_solr.sh file
 
     #!/bin/bash
 
-	docker run -d --rm --network my-network --hostname solr --name=solr -p 8983:8983 -v /Users/[user]/Github/solr/solr/documents:/home solr7.3 #line 3
+	docker run -d --rm --network my-network --hostname solr --name=solr -p 8983:8983 -p 8181:8181 -v /Users/[user]/Github/solr/solr/documents:/home solr7.3 #line 3
 	docker exec -ti solr /bin/bash
 
 In terminal change permissions for file with:
