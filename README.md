@@ -27,7 +27,7 @@ In Atom terminal change to docker-solr/7.3 folder to run docker build . command 
 
 Create shell executable file with docker command for starting and running the container on the my-network (docker network) with the host name solr and container name solr7.3 sharing host port 8983:8983 and shared volume ~/user/Github/solr/solr.  solr admin dashboard will be viewable in browser on localhost:8983
 
-	>docker run -d --rm --network my-network --hostname solr --name=solr -p 8983:8983 -v /Users/alessandropiccolo/Github/solr/solr/documents:/home solr7.3
+	>docker run -d --rm --network my-network --hostname solr --name=solr -p 8983:8983 -v /Users/[user]/Github/solr/solr/documents:/home solr7.3
 
 Enter solr container bash by running:
 
@@ -43,7 +43,7 @@ Add following scripts to start_run_solr.sh file
 
     #!/bin/bash
 
-	docker run -d --rm --network my-network --hostname solr --name=solr -p 8983:8983 -v /Users/alessandropiccolo/Github/solr/solr/documents:/home solr7.3 #line 3
+	docker run -d --rm --network my-network --hostname solr --name=solr -p 8983:8983 -v /Users/[user]/Github/solr/solr/documents:/home solr7.3 #line 3
 	docker exec -ti solr /bin/bash
 
 In terminal change permissions for file with:
