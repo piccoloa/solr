@@ -1,7 +1,3 @@
-# READ ME
-
-Instructions for creating your own solr 7.3 Docker container for learning.
-
 Create remote repo on github:
 https://github.com/piccoloa/solr
 
@@ -56,3 +52,7 @@ In terminal change permissions for file with:
 
 
 Start learning SolR from sources on [website.](http://lucene.apache.org/solr/resources.html)
+
+To use executable to launch solr container run command below shell-commands folder
+
+	>./start_run_solr.sh
