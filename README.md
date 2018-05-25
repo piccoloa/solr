@@ -3,7 +3,7 @@ https://github.com/piccoloa/solr
 
 Open terminal:
 
-    >     cd to ~/GitHub
+    >     cd ~/GitHub
     >     mkdir solr
     >     cd solr
     >     git clone https://github.com/piccoloa/solr
